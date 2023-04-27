@@ -1,3 +1,9 @@
+.workspace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .pixelArtDrawWorkspace{
   width: 550px;
   height: 550px;
@@ -37,21 +43,22 @@ th{
 
   border: 0.5px solid grey;
   background: white;
+
   padding: 0;
 }
 .pixelArtDrawSettings{
   width: 550px;
   height: 100px;
 
-  margin-top: 10px;
-
-  border: 1px solid white;
-  background: #303030;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  border: 1px solid white;
+  background: #303030;
+
+  margin-top: 10px;
 }
 .pixelArtDrawSettingsStructureBlock{
   width: 500px;
@@ -65,25 +72,26 @@ th{
   width: 200px;
   height: 30px;
 
-  padding: 0;
-  border: 0px;
-
   color: black;
   font-family: Consolas;
   font-size: 20px;
   text-align: center;
+
+  padding: 0;
+  border: 0px;
 }
 .resizeErrorInputField{
   width: 200px;
   height: 29px;
 
-  padding: 0;
-  border: 1px solid red;
-
   color: red;
   font-family: Consolas;
   font-size: 20px;
   text-align: center;
+
+  border: 1px solid red;
+
+  padding: 0;
 }
 .pixelArtDrawButtons{
   width: 200px;
@@ -94,11 +102,11 @@ th{
   flex-direction: column;
   align-items: center;
 
-  border: 0px;
-  background: #42b883;
-
   font-family:Consolas;
   font-size: 20px;
+
+  border: 0px;
+  background: #42b883;
 }
 .resizeInputFieldInstrucion{
   width: 200px;

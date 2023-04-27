@@ -4,28 +4,37 @@
 		<meta charset="utf-8">
 		<title>PAD</title>
 		<link rel="stylesheet" href="../src/styles/style.css">
-		<link rel="stylesheet" href="../src/styles/pixelArtDrawStyle.css">
-		<link rel="shortcut icon" type="image/ico" href="../src/favicon.ico"/>
+		<link rel="stylesheet" href="../src/styles/workspaceStyle.css">
+		<link rel="stylesheet" href="../src/styles/sidebarStyle.css">
+		<link rel="shortcut icon" type="image/ico" href="../src/styles/favicon.ico"/>
 	</head>
 	
 	<body>
 
-		<div class="pixelArtDrawWorkspace" id="pixelArtDrawWorkspace">
-			
-		</div>
+		<div class="workspace">
 
-		<div class="pixelArtDrawSettings">
-			<div class="pixelArtDrawSettingsStructureBlock">
-				<div class="resizeInputFieldInstrucion">min: 2 | max: 64</div>
-				<input class="resizeInputField" id="resizeInputField" type="number" placeholder="table size">
+			<div class="pixelArtDrawWorkspace" id="pixelArtDrawWorkspace"></div><!-- pixelArtDrawWorkspace -->
+
+			<div class="pixelArtDrawSettings">
+				<div class="pixelArtDrawSettingsStructureBlock">
+					<div class="resizeInputFieldInstrucion">min: 2 | max: 64</div>
+					<input class="resizeInputField" id="resizeInputField" type="number" placeholder="table size">
+				</div>
+
+				<div class="pixelArtDrawSettingsStructureBlock">
+					<button class="pixelArtDrawButtons" onclick="reset()">reset</button>
+					<button class="pixelArtDrawButtons" onclick="resize()">resize</button>
+					<button class="pixelArtDrawButtons" onclick="PrintDiv()">download</button>
+				</div>
 			</div>
 
-			<div class="pixelArtDrawSettingsStructureBlock">
-				<button class="pixelArtDrawButtons" onclick="reset()">reset</button>
-				<button class="pixelArtDrawButtons" onclick="resize()">resize</button>
-			</div>
-		</div>
+		 </div><!-- workspace end -->
 
-		<script src="../src/scripts/script.js"></script>
+		<div class="sidebar">
+			<div class="sidebarPalette"></div>
+		</div><!-- sidebar -->
+
+		<script src="../src/scripts/tableCreatorScripts.js"></script>
+		<script src="../src/scripts/buttonScripts.js"></script>
 	</body>
 </html>
