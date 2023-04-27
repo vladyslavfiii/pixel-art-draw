@@ -7,7 +7,8 @@
   justify-content: center;
   align-items: center;
 
-  background: white;
+  border: 1px solid white;
+  background: #303030;
 }
 .tableToDraw{
   width: 500px;
@@ -17,6 +18,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  border: 1px solid white;
+  background: #303030;
 }
 tr{
   width: 100%;
@@ -31,8 +35,83 @@ th{
   width: 100%;
   height: 100%;
 
-  border: 1px solid grey;
+  border: 0.5px solid grey;
+  background: white;
+  padding: 0;
+}
+.pixelArtDrawSettings{
+  width: 550px;
+  height: 100px;
+
+  margin-top: 10px;
+
+  border: 1px solid white;
+  background: #303030;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.pixelArtDrawSettingsStructureBlock{
+  width: 500px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.resizeInputField{
+  width: 200px;
+  height: 30px;
 
   padding: 0;
-  transition: 1s;
+  border: 0px;
+
+  color: black;
+  font-family: Consolas;
+  font-size: 20px;
+  text-align: center;
+}
+.resizeErrorInputField{
+  width: 200px;
+  height: 29px;
+
+  padding: 0;
+  border: 1px solid red;
+
+  color: red;
+  font-family: Consolas;
+  font-size: 20px;
+  text-align: center;
+}
+.pixelArtDrawButtons{
+  width: 200px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  border: 0px;
+  background: #42b883;
+
+  font-family:Consolas;
+  font-size: 20px;
+}
+.resizeInputFieldInstrucion{
+  width: 200px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 20px;
+  font-family: Consolas;
+  color: white;
+
+  border: 1px solid white;
 }
