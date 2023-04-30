@@ -4,7 +4,7 @@ window.onload = () => {
 }
 
 function tableCreator(tableSize) {
-	let workspace = document.querySelector('#pixelArtDrawWorkspace')
+	let workspace = document.querySelector('.pixelArtDrawWorkspace')
 	let table = document.createElement('table');
 
 	table.classList.add("tableToDraw");

@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="../src/styles/style.css">
 		<link rel="stylesheet" href="../src/styles/workspaceStyle.css">
 		<link rel="stylesheet" href="../src/styles/sidebarStyle.css">
+		
 		<link rel="shortcut icon" type="image/ico" href="../src/styles/favicon.ico"/>
 	</head>
 	
@@ -25,6 +26,10 @@
 					<button class="pixelArtDrawButtons" onclick="reset()">reset</button>
 					<button class="pixelArtDrawButtons" onclick="resize()">resize</button>
 				</div>
+
+				<div class="pixelArtDrawSettingsStructureBlock">
+					<button class="pixelArtDrawButtons" onclick="download()">download</button>
+				</div>
 			</div>
 
 		 </div><!-- workspace end -->
@@ -35,5 +40,7 @@
 
 		<script src="../src/scripts/tableCreatorScripts.js"></script>
 		<script src="../src/scripts/buttonScripts.js"></script>
+
+		<script type="text/javascript" src="../src/scripts/html2canvas/html2canvas.js"></script>
 	</body>
 </html>
